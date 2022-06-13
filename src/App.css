@@ -1,0 +1,54 @@
+@import '~antd/dist/antd.min.css';
+.App {
+  text-align: center;
+  margin: 1% 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.top-container {
+  margin-bottom: 2%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.01px solid #f1f1f1;
+  box-shadow: 10px 10px 63px 3px rgba(102,102,102,0.21);
+  -webkit-box-shadow: 10px 10px 63px 3px rgba(102,102,102,0.21);
+  -moz-box-shadow: 10px 10px 63px 3px rgba(102,102,102,0.21);
+  padding: 1% 5% 1%;
+  width: max-content;
+}
+
+.login-container{
+  display: flex;
+  justify-content: center;
+}
+
+.add-customer {
+  padding: 1% ;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+.input {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.label-input {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  padding: 0 5%;
+}
