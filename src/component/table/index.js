@@ -1,10 +1,8 @@
 import { Button, Modal, Row, Col, Table, Input, Select } from 'antd';
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import {FaTrashAlt} from 'react-icons/fa'
 import {BsFillPencilFill} from 'react-icons/bs'
-import { data } from './constantData';
 import { GlobalContext } from '../context/GlobalState';
-import axios from 'axios';
 
 const TableComponent = ({search}) => {
   const {addCustomer, editCustomer, deleteCustomer} = useContext(GlobalContext)
@@ -44,15 +42,15 @@ const TableComponent = ({search}) => {
       key: 'status',
       filters: [
         {
-          text: 'True',
+          text: 'ACTIVE',
           value: true,
         },
         {
-          text: 'False',
+          text: 'INACTIVE',
           value: false,
         }
       ],
-      render: (x)=> x===false? 'FALSE': 'TRUE',
+      render: (x)=> x===false? 'INACTIVE': 'ACTIVE',
       onFilter: (value, record) => record.status === value,
     },
     {
